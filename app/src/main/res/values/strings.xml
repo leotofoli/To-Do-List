@@ -7,4 +7,6 @@
     <string name="label_cancel">Cancelar</string>
     <string name="lbl_task">Tarefas</string>
     <string name="desc_new_task">Nova tarefa</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_delete">Deletar</string>
 </resources>

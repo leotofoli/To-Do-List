@@ -1,5 +1,6 @@
 package com.example.todolist.ui
 
+import android.app.Activity
 import android.nfc.Tag
 import android.os.Bundle
 import android.util.Log
@@ -67,7 +68,9 @@ class AddTaskActivity :AppCompatActivity() {
                 description = ""
             )
             TaskDataSource.insertTask(task)
-            Log.e("TAG","insertListeners: " + TaskDataSource.getList())
+
+            setResult(Activity.RESULT_OK)
+            finish()
         }
 
     }
