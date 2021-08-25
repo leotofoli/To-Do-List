@@ -16,6 +16,8 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <include android:id="@+id/include_empty" layout="@layout/empty_stage" />
     
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_tasks"
@@ -26,7 +28,9 @@
         tools:listitem="@layout/item_task"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
+        android:layout_height="0dp"
+        tools:visibility="gone"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
